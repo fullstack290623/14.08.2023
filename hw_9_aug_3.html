@@ -10,9 +10,9 @@
   
         alert('Welcome to the guessing game!');
 
-        const lucky_number = Math.floor(Math.random() * 100) + 1 // 77
+        const lucky_number = Math.floor(Math.random() * 100) + 1 
 
-        let guess = parseInt(prompt("Enter number [1-100]: ")) // 77
+        let guess = parseInt(prompt("Enter number [1-100]: ")) 
         let count = 1;
 
         while (guess != lucky_number) {
@@ -24,7 +24,7 @@
                 guess = parseInt(prompt(`Guess higher than ${guess}: `))
             }
 
-            // short and sweet...
+            // short and sweet
             // guess = parseInt(prompt(`Guess ${guess > lucky_number ? 'lower' : 'higher'} than ${guess}: `))
         }
 
