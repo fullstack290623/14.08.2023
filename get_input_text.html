@@ -10,6 +10,7 @@
         <p>Enter number 1: <input type="number" id="number1" /></p>
         <p>Enter number 2: <input type="number" id="number2" /></p>
         <p><button onclick="print_sum()">Print number</button></p>
+        <div id="result"></div>
     </div>
     <script>
 
@@ -19,10 +20,13 @@
 
         function print_sum() {
             // 1. write into document or into console the sum of these 2 numbers
-            
-
             console.log(`clicked button!`);
-            const number1 = parseInt(document.getElementById('number1').value)
+            const x = parseInt(document.getElementById('number1').value)
+            const y = parseInt(document.getElementById('number2').value)
+            const sum = x + y
+            //document.write(`<h2>${number1} + ${number2} = ${sum}</h2>`)
+
+            document.getElementById('result').innerHTML += `<p>${x} + ${y} = ${sum}</p>`
         }
     </script>
 </body>
